@@ -23,6 +23,9 @@ Using bidirectional will run your inputs in two ways, one from past to future an
 ### Dataset:
 The data used for training and testing the model is IMDb movie reviews dataset, which consists of 49,582 movie reviews in English language. Each movie review is labelled as positive or negative.
 
+[Dataset link](https://drive.google.com/file/d/14rqv9apC6YjcpbGBCy5nm03IVM0RnHbr/view?usp=sharing)
+ 
+
 ### Model Definition:
 Our BiLSTM model consists of the following layers:
 - **Embedding Layer**: It creates word vectors of each word in the word_index and groups words that are related or have similar meaning by analyzing other words around them.
