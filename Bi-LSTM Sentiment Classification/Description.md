@@ -17,7 +17,8 @@ LSTM stands for “Long short-term memory” is an artificial neural network arc
 In unidirectional LSTM information flows from the backward to forward. On the contrary in Bi-directional LSTM information not only flows backward to forward but also forward to backward using two hidden states. Hence Bi-LSTMs understand the context better.
 
 Using bidirectional will run your inputs in two ways, one from past to future and vice-versa  and what differs this approach from unidirectional is that in the LSTM that runs backward you preserve information from the future and using the two hidden states combined you are able in any point in time to preserve information from both past and future. BiLSTMs show very good results as they can understand the context better.
-(image)
+
+![](images/bilstm.jpg)
 
 ### Dataset:
 The data used for training and testing the model is IMDb movie reviews dataset, which consists of 49,582 movie reviews in English language. Each movie review is labelled as positive or negative.
@@ -43,11 +44,11 @@ For each model type, defined a couple of models by adding or removing some layer
 Amongst different experiments, the BiLSTM model consisting of one embedding layer, one masking layer, two BiLSTM wrappers and three dense layers gave the highest test set accuracy of **88.3%**.
 
 The following barplot gives the comparison of different models in terms of test set accuracy:
-(image)
+![](images/barplot.jpg)
 
 ### Comparison with other models:
-(image)
+![](images/comparison.jpg)
 
 ### Conclusion
 
-BiLSTM model proves to be the best classifier for sentiment classification on this data, compared with other models expeerimented.
+BiLSTM model proves to be the best classifier for sentiment classification on this data, compared with other models experimented.
